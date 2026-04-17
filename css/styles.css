@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #213448; /* Dark blue background */
+    color: #f4f4f4; /* Light text color */
+}
+h1 {
+    text-align: center;
+    color: #f4f4f4; /* Muted green accent */
+}
+.alien-images {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.alien-images img {
+    width: 100px;
+    margin: 0 10px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #629584; /* Muted green background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #213448;
+    color: #f4f4f4;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+}
+.radio-group,
+.checkbox-group {
+    margin-top: 5px;
+}
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.slider-label {
+    margin-top: 15px;
+}
+#intensity-value {
+    font-weight: bold;
+    margin-left: 10px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #213448; /* Dark blue button */
+    color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #f4f4f4;
+    color: #213448;
+}
