@@ -1,128 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <title>Alien Sighting Form</title>
+        <title>Monster Mash</title>
         <link
-            rel="stylesheet"
-            href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="favicon_io/apple-touch-icon.png"
         />
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="favicon_io/site.webmanifest" />
+        <link type="text/css" href="styles/monsterMash.css" rel="stylesheet" />
     </head>
+
     <body>
-        <h1>Alien Sighting Report Form</h1>
-
-        <div class="alien-images">
+        <header id="top"><img src="images/Monster_Mashup.png" /></header>
+        <div id="container">
             <img
-                src="aliens.png"
-                alt="Alien 1"
-                style="width: 100px; height: auto"
+                class="lightning"
+                id="lightning1"
+                src="images/lightning-01.jpg"
             />
-            <!-- Assuming aliens.png contains all three aliens as in the image you provided -->
+            <img
+                class="lightning"
+                id="lightning2"
+                src="images/lightning-02.jpg"
+            />
+            <img
+                class="lightning"
+                id="lightning3"
+                src="images/lightning-03.jpg"
+            />
+            <div id="frame">
+                <div id="pic_box">
+                    <div id="head" class="face js-nomenu">
+                        <img src="images/headsstrip.jpg" />
+                    </div>
+                    <div id="eyes" class="face js-noMenu">
+                        <img src="images/eyesstrip.jpg" />
+                    </div>
+                    <div id="nose" class="face js-noMenu">
+                        <img src="images/nosesstrip.jpg" />
+                    </div>
+                    <div id="mouth" class="face js-noMenu">
+                        <img src="images/mouthsstrip.jpg" />
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <form id="alienForm">
-            <label for="name">1. Your Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="date">2. Date of Sighting:</label>
-            <input type="date" id="date" name="date" required />
-
-            <label>3. Did you see the alien clearly?</label>
-            <div class="radio-group">
-                <input
-                    type="radio"
-                    id="clearYes"
-                    name="clear"
-                    value="Yes"
-                    required
-                />
-                <label for="clearYes">Yes</label>
-                <input type="radio" id="clearNo" name="clear" value="No" />
-                <label for="clearNo">No</label>
-            </div>
-
-            <label for="location">4. Location of Sighting:</label>
-            <input type="text" id="location" name="location" required />
-
-            <label>5. Number of aliens seen:</label>
-            <input
-                type="number"
-                id="alienCount"
-                name="alienCount"
-                min="1"
-                max="100"
-                required
-            />
-
-            <label>6. Alien color(s) observed (check all that apply):</label>
-            <div class="checkbox-group">
-                <input
-                    type="checkbox"
-                    id="colorBlue"
-                    name="color"
-                    value="Blue"
-                />
-                <label for="colorBlue">Blue</label>
-                <input
-                    type="checkbox"
-                    id="colorPink"
-                    name="color"
-                    value="Pink"
-                />
-                <label for="colorPink">Pink</label>
-                <input
-                    type="checkbox"
-                    id="colorGreen"
-                    name="color"
-                    value="Green"
-                />
-                <label for="colorGreen">Green</label>
-            </div>
-
-            <label>7. Did the alien communicate with you?</label>
-            <div class="radio-group">
-                <input
-                    type="radio"
-                    id="communicateYes"
-                    name="communicate"
-                    value="Yes"
-                    required
-                />
-                <label for="communicateYes">Yes</label>
-                <input
-                    type="radio"
-                    id="communicateNo"
-                    name="communicate"
-                    value="No"
-                />
-                <label for="communicateNo">No</label>
-            </div>
-
-            <label for="description">8. Describe the alien's behavior:</label>
-            <textarea
-                id="description"
-                name="description"
-                rows="3"
-                cols="40"
-                required
-            ></textarea>
-
-            <label class="slider-label"
-                >9. Rate the intensity of the sighting:</label
-            >
-            <div id="intensity-slider" style="width: 300px"></div>
-            <span id="intensity-value">5</span>/10
-
-            <label>10. Would you like to be contacted for follow-up?</label>
-            <input type="checkbox" id="contact" name="contact" />
-            <label for="contact">Yes, contact me</label>
-
-            <button type="submit">Submit Report</button>
-        </form>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="scripts/scripts.js"></script>
+        <!-- Optional audio element for fallback or manual control -->
+        <audio id="audio" src="scripts/thunder.mp3" preload="auto"></audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/my_scripts.js"></script>
     </body>
 </html>
